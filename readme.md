@@ -25,6 +25,9 @@ Run app
 ```sh
 $ npm start
 ```
-
+OR
+```sh
+$ nodemon
+```
 
 
