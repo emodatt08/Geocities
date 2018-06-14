@@ -25,7 +25,7 @@ Run app
 ```sh
 $ npm start
 ```
-OR
+OR if you have nodemon installed
 ```sh
 $ nodemon
 ```
