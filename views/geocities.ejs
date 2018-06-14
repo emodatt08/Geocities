@@ -1,0 +1,9 @@
+<% include partials/header %>
+<p>
+<ul class = "list-group">
+    <% geo.forEach(function(geo){ %> 
+<li class = "list-group-item"><%= geo.country %>: &nbsp;  <%= geo.town %></li>
+  <% }) %>
+</ul>
+</p>
+<% include partials/footer %>

@@ -1,0 +1,27 @@
+<% include partials/header %>
+
+<!--<img src = "https://www.w3schools.com/bootstrap/bird.jpg" class = "img-rounded" />-->
+<div>
+  <% if (errors != undefined){%>
+    <ul>
+      <% errors.forEach(function(error){ %>
+      <li> <%= error.msg %> </li>
+     <% }) %>
+    </ul><% } %>
+  <form method ="POST" action="/geo/add">
+
+    <label>Country</label>
+    <input type="text" placeholder="" name="country" class="form-group"/>
+    <label>City</label>
+    <input type="text" placeholder="" name="city" class="form-group"/>
+     <input type="submit" placeholder="" name="submit" value="Submit" class="btn btn-default" id="submit"/>
+    </form>
+  </div>
+<p>
+<ul class = "list-group">
+    <% geo.forEach(function(geo){ %> 
+<li class = "list-group-item"><%= geo.country %>: &nbsp;  <%= geo.city %> <a href="#" data-id = "<%= geo._id %>"class="deleteUser">Delete</a></li>
+  <% }) %>
+</ul>
+</p>
+<% include partials/footer %>

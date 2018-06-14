@@ -1,0 +1,18 @@
+    
+ .form-group{
+        border-radius: 20px;
+        border-color: cornflowerblue;
+    }
+    #navbar{
+      
+     
+      background-color:cornflowerblue;
+    }
+    #submit{
+      border-color: cornflowerblue;
+
+    }
+    #submit:hover{
+        background-color:cornflowerblue;
+        color:white;
+    }
